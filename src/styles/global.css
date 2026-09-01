@@ -107,10 +107,21 @@ img {
 code,
 pre {
 	font-family: var(--font-google-sans-code);
+	background: #eee;
+}
+
+code {
+	padding: 0.1em 0.3em;
 }
 
 pre {
 	overflow-x: auto;
+	padding: 0.8em 1em;
+}
+
+pre code {
+	padding: 0;
+	background: none;
 }
 
 blockquote {
