@@ -10,9 +10,11 @@ const friends = (await getCollection('links')).sort((a, b) =>
 <BaseLayout title="友链" description="Ventus Uta的朋友们">
 	<h1 class="page-title">友链</h1>
 	<p>咱的信息：</p>
-	<pre>- title: Ventus Uta
-- link: https://www.ventusuta.com/
-- description: 8点、Classroom见</pre>
+	<ul>
+		<li>标题：Ventus Uta</li>
+		<li>链接：https://www.ventusuta.com/</li>
+		<li>描述：8点、Classroom见</li>
+	</ul>
 	<p>可以给我的邮箱发邮件来互联哦：ventusuta★gmail.com（将“★”换为“@”）</p>
 	{
 		friends.length === 0 ? (
