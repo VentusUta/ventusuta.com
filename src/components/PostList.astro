@@ -1,0 +1,45 @@
+---
+import { formatMonthDay, groupPostsByYear, type BlogPost } from '../lib/posts';
+
+interface Props {
+	posts: BlogPost[];
+}
+
+const { posts } = Astro.props;
+const years = groupPostsByYear(posts);
+---
+
+{
+	posts.length === 0 ? (
+		<p>还没有文章。</p>
+	) : (
+		years.map(({ year, posts: yearPosts }) => (
+			<section class="year-group">
+				<p class="year">{year}</p>
+				<ul class="post-list">
+					{yearPosts.map((post) => (
+						<li>
+							<time datetime={post.data.pubDate.toISOString()}>
+								{formatMonthDay(post.data.pubDate)}
+							</time>
+							<div>
+								<h2>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								</h2>
+								{post.data.tags.length > 0 && (
+									<ul class="tags">
+										{post.data.tags.map((tag) => (
+											<li>
+												<a href={`/blog/tags/${encodeURIComponent(tag)}/`}>{tag}</a>
+											</li>
+										))}
+									</ul>
+								)}
+							</div>
+						</li>
+					))}
+				</ul>
+			</section>
+		))
+	)
+}

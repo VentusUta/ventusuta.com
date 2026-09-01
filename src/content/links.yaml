@@ -1,0 +1,12 @@
+- id: winslow
+  name: Winslow
+  url: https://winsloweric.com/
+  icon: https://avatars.githubusercontent.com/u/36105035?v=4
+  description: 一个妄想着些什么的观察者。
+
+- id: overflowcat
+  name: 新世界的大门
+  url: https://blog.xinshijiededa.men
+  icon: https://raw.githubusercontent.com/OverflowCat/blog/test_a/imgs/avatar/xni.png
+  description: 因此幻想是世界，谁若懂得，谁就会歌唱
+  rss: https://blog.xinshijiededa.men/atom.xml/

@@ -1,0 +1,11 @@
+---
+import PostList from '../../components/PostList.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPublishedPosts } from '../../lib/posts';
+
+const posts = await getPublishedPosts();
+---
+
+<BaseLayout title="网志" description="Ventus Uta的网络日志">
+	<PostList posts={posts} />
+</BaseLayout>

@@ -1,0 +1,40 @@
+---
+import { Font } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_DESCRIPTION, SITE_LANG, SITE_TITLE } from '../consts';
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title, description = SITE_DESCRIPTION } = Astro.props;
+const fullTitle = title ? `${title}_${SITE_TITLE}` : SITE_TITLE;
+---
+
+<!doctype html>
+<html lang={SITE_LANG}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<link rel="alternate" type="application/rss+xml" title={`${SITE_TITLE} 网志`} href="/rss.xml" />
+		<Font cssVariable="--font-charter" preload={[{ weight: 'normal', style: 'normal' }]} />
+		<Font cssVariable="--font-google-sans-code" />
+		<title>{fullTitle}</title>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="wrap">
+				<slot />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

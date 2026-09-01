@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const friends = (await getCollection('links')).sort((a, b) =>
+	a.data.name.localeCompare(b.data.name, 'zh-CN'),
+);
+---
+
+<BaseLayout title="友链" description="Ventus Uta的朋友们">
+	<h1 class="page-title">友链</h1>
+	{
+		friends.length === 0 ? (
+			<p>还没有友链。</p>
+		) : (
+			<ul class="friend-list">
+				{friends.map((friend) => (
+					<li class="friend-card">
+						{friend.data.icon ? (
+							<img
+								class="friend-icon"
+								src={friend.data.icon}
+								alt=""
+								width="32"
+								height="32"
+							/>
+						) : (
+							<span class="friend-icon" aria-hidden="true">
+								{friend.data.name.slice(0, 1)}
+							</span>
+						)}
+						<div class="friend-body">
+							<div class="friend-heading">
+								<a href={friend.data.url} rel="noopener noreferrer">
+									{friend.data.name}
+								</a>
+								{friend.data.rss && (
+									<a class="friend-rss" href={friend.data.rss} rel="noopener noreferrer">
+										RSS
+									</a>
+								)}
+							</div>
+							{friend.data.description && <p>{friend.data.description}</p>}
+						</div>
+					</li>
+				))}
+			</ul>
+		)
+	}
+</BaseLayout>

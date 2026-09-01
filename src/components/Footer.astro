@@ -1,0 +1,21 @@
+---
+import { SITE_TITLE } from '../consts';
+
+const year = new Date().getFullYear();
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+const onBlog = pathname === '/blog' || pathname.startsWith('/blog/');
+---
+
+<footer class="site-footer">
+	<div class="wrap">
+		<span>Copyright &copy; {year} {SITE_TITLE}. All rights reserved.</span>
+		{
+			onBlog && (
+				<div class="footer-links">
+					<a href="/blog/tags/">全部标签</a>
+					<a href="/rss.xml">RSS</a>
+				</div>
+			)
+		}
+	</div>
+</footer>
