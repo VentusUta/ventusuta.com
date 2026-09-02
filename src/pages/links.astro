@@ -16,7 +16,8 @@ const friends = (await getCollection('links')).sort((a, b) =>
 		<li>链接：https://www.ventusuta.com/</li>
 		<li>描述：8点、Classroom见</li>
 	</ul>
-	<p>可以给我的邮箱发邮件来互联哦：ventusuta★gmail.com（将“★”换为“@”）</p>
+	<p>可以给我的邮箱发邮件来互联哦：ventusuta★gmail.com（将“★”换为“@”）。</p>
+	<p>友情链接需要提供的信息：标题、头像URL、链接、描述、RSS链接（如果有）。</p>
 	{
 		friends.length === 0 ? (
 			<p>还没有友链。</p>
