@@ -1,7 +1,7 @@
 ---
-import PostList from '../../../components/PostList.astro';
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { getPublishedPosts, type BlogPost } from '../../../lib/posts';
+import PostList from "../../../components/PostList.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPublishedPosts, type BlogPost } from "../../../lib/posts";
 
 export async function getStaticPaths() {
 	const posts = await getPublishedPosts();

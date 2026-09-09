@@ -1,7 +1,7 @@
 ---
-import PostList from '../../components/PostList.astro';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPublishedPosts } from '../../lib/posts';
+import PostList from "../../components/PostList.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedPosts } from "../../lib/posts";
 
 const posts = await getPublishedPosts();
 ---

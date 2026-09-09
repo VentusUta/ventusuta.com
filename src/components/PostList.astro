@@ -1,5 +1,5 @@
 ---
-import { formatMonthDay, groupPostsByYear, type BlogPost } from '../lib/posts';
+import { formatMonthDay, groupPostsByYear, type BlogPost } from "../lib/posts";
 
 interface Props {
 	posts: BlogPost[];
@@ -24,13 +24,19 @@ const years = groupPostsByYear(posts);
 							</time>
 							<div>
 								<h2>
-									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+									<a href={`/blog/${post.id}/`}>
+										{post.data.title}
+									</a>
 								</h2>
 								{post.data.tags.length > 0 && (
 									<ul class="tags">
 										{post.data.tags.map((tag) => (
 											<li>
-												<a href={`/blog/tags/${encodeURIComponent(tag)}/`}>{tag}</a>
+												<a
+													href={`/blog/tags/${encodeURIComponent(tag)}/`}
+												>
+													{tag}
+												</a>
 											</li>
 										))}
 									</ul>
