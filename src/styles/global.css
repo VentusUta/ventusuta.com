@@ -237,7 +237,7 @@ span.friend-icon {
 
 .friend-rss {
 	font-size: 0.85em;
-	font-weight: normal;
+	font-weight: normal !important;
 	flex-shrink: 0;
 }
 
