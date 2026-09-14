@@ -1,0 +1,35 @@
+---
+import { SITE_TITLE } from "../consts";
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+
+const items = [
+	{ href: "/", label: "Top" },
+	{ href: "/blog", label: "Blog" },
+	{ href: "/friends", label: "Friends" },
+];
+
+function isCurrent(href: string) {
+	if (href === "/") return pathname === "/";
+	return pathname === href || pathname.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header">
+	<div class="wrap">
+		<a class="site-title" href="/">{SITE_TITLE}</a>
+		<nav class="nav">
+			{
+				items.map((item) => (
+					<a
+						href={item.href}
+						data-text={item.label}
+						aria-current={isCurrent(item.href) ? "page" : undefined}
+					>
+						{item.label}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+</header>
