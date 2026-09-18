@@ -11,7 +11,7 @@ export async function GET(context: APIContext) {
 	const posts = await getPublishedPosts();
 
 	return rss({
-		title: `${SITE_TITLE}_网志`,
+		title: `${SITE_TITLE}_网络日志`,
 		description: SITE_DESCRIPTION,
 		site: context.site!,
 		items: posts.map((post) => ({

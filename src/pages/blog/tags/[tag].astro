@@ -23,7 +23,8 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout title={`#${tag}_网志`} description={`标签「${tag}」下的网志`}>
-	<h1 class="page-title">#{tag}</h1>
+<BaseLayout title={`#${tag}_网络日志`} description={`带“${tag}”标签的日志`}>
+	<h1 class="page-title">带“{tag}”标签的日志</h1>
+	<p>同一篇日志可能包含多个标签。</p>
 	<PostList posts={posts} />
 </BaseLayout>
