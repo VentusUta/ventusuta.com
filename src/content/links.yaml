@@ -1,0 +1,42 @@
+- id: winslow
+  name: Winslow
+  url: https://winsloweric.com/
+  icon: https://avatars.githubusercontent.com/u/36105035?v=4
+  description: 一个妄想着些什么的观察者。
+
+- id: overflowcat
+  name: 新世界的大门
+  url: https://blog.xinshijiededa.men
+  icon: https://raw.githubusercontent.com/OverflowCat/blog/test_a/imgs/avatar/xni.png
+  description: 因此幻想是世界，谁若懂得，谁就会歌唱
+  rss: https://blog.xinshijiededa.men/atom.xml/
+
+- id: moonchime
+  name: 月铃
+  url: https://moecore.net/
+  icon: https://avatars.githubusercontent.com/u/301137609?v=4
+  description: 天不在人之上造人，亦不在人之下造人
+
+- id: hakadao
+  name: Hakadao
+  url: https://hakadao.cc/
+  icon: https://avatars.githubusercontent.com/u/33394391?v=4
+  description: Now I am become a loser, the destroyer of myself
+
+- id: toriest
+  name: Toriest
+  url: https://www.yatori.cc/
+  icon: https://cdn.jsdelivr.net/gh/yasaitoriovo/toriest-img@latest/me/icon.jpeg
+  description: Always be brave to dream.
+
+- id: isla
+  name: Aira
+  url: https://aira.cafe/
+  icon: https://avatars.githubusercontent.com/u/45261195?v=4
+  description: Kind and Kawaii, Forever!~
+
+- id: vzstless
+  name: VZstless
+  url: https://vzstless.moe/
+  icon: https://avatars.githubusercontent.com/u/233668878?v=4
+  description: As once, as always.
