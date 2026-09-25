@@ -9,7 +9,8 @@ export default defineConfig({
 			provider: fontProviders.local(),
 			name: 'Charter',
 			cssVariable: '--font-charter',
-			fallbacks: ['serif'],
+			fallbacks: ['Charter'],
+			optimizedFallbacks: false,
 			options: {
 				variants: [
 					{

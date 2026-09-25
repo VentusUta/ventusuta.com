@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: var(--font-charter);
+	font-family: var(--font-charter), serif;
 	margin: 0;
 	line-height: 1.6;
 }
@@ -343,6 +343,11 @@ h1 {
 
 .prose:lang(zh-CN) {
 	text-align: justify;
+}
+
+.prose:lang(zh-CN) strong,
+.prose:lang(zh-CN) b {
+	font-family: var(--font-charter), sans-serif;
 }
 
 .prose hr {
