@@ -262,7 +262,7 @@ span.friend-icon {
 .post-list .excerpt {
 	margin: 0.15em 0 0;
 	font-size: 0.85em;
-	color: gray;
+	color: #767676;
 }
 
 .tags {
@@ -276,7 +276,7 @@ span.friend-icon {
 .post-list .post-tags {
 	margin-top: 0.2em;
 	font-size: 0.85em;
-	color: gray;
+	color: #767676;
 }
 
 h1 {
@@ -286,7 +286,7 @@ h1 {
 .post-header .meta {
 	margin: 0.25em 0 0;
 	font-size: 0.85em;
-	color: gray;
+	color: #767676;
 }
 
 .post-header .meta p {
@@ -329,7 +329,7 @@ h1 {
 }
 
 .post-tags a {
-	color: gray;
+	color: #767676;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: 1px;
