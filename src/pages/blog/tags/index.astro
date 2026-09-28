@@ -16,8 +16,9 @@ const tags = getAllTags(posts);
 				{tags.map(({ tag, count }) => (
 					<li>
 						<a href={`/blog/tags/${encodeURIComponent(tag)}/`}>
-							{tag} ({count})
+							{tag}
 						</a>
+						<sup>{count}</sup>
 					</li>
 				))}
 			</ul>

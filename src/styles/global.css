@@ -269,7 +269,7 @@ span.friend-icon {
 .tags {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.35em;
+	gap: 1em;
 	margin: 0;
 	line-height: 1.3;
 }
