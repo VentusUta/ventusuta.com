@@ -39,9 +39,13 @@ const fullTitle = title ? `${title}_${SITE_TITLE}` : SITE_TITLE;
 			title={`网络日志_${SITE_TITLE}`}
 			href="/rss.xml"
 		/>
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<Font
 			cssVariable="--font-charter"
-			preload={[{ weight: "normal", style: "normal" }, { weight: "bold", style: "normal" }]}
+			preload={[
+				{ weight: "normal", style: "normal" },
+				{ weight: "bold", style: "normal" },
+			]}
 		/>
 		<title>{fullTitle}</title>
 	</head>
