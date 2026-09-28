@@ -3,11 +3,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	<h1 class="page-title">你好。</h1>
-	<p class="intro">欢迎来到在下的个人主页。</p>
-	<div class="sns">
-		<p>我的社媒列表（GitHub也算社媒吗？）：</p>
-		<ul>
+	<div class="top-page-content">
+		<h1>你好。</h1>
+		<p class="intro">欢迎来到在下的个人主页。</p>
+		<h2 class="about-me">关于我</h2>
+		<p>
+			我是个没有勇气去死，也没有动力活着的废物。如果哪一天离去，希望大家不要记住我。
+		</p>
+		<p>
+			<ruby>帕斯特<rp>（</rp><rt>past</rt><rp>）</rp></ruby
+			>难以回首，<ruby>弗特拉<rp>（</rp><rt>future</rt><rp>）</rp></ruby
+			>难以展望，我才是真正的活在<ruby
+				>普雷森特<rp>（</rp><rt>present</rt><rp>）</rp></ruby
+			>。
+		</p>
+		<p>社媒列表：</p>
+		<ul style="text-align: left !important;">
 			<li>X：<a href="https://x.com/ventusuta">@VentusUta</a></li>
 			<li>
 				GitHub：<a href="https://github.com/ventusuta">@VentusUta</a>
@@ -19,5 +30,34 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			</li>
 			<li>电子邮箱：ventusuta★gmail.com（将“★”换为“@”）</li>
 		</ul>
+		<h2 class="about-this-site">关于敝站</h2>
+		<p>
+			这个站点是我用<a href="https://astro.build/">Astro</a
+			>搭建的，CSS和功能尽可能克制，以利于可接近性（accessibility，往往是指读屏器和阅读器的兼容性）并显得素雅。如果有不符合可接近性标准（比如WCAG等）的地方，可以告诉我。
+		</p>
+		<p>
+			网站没有设计深色模式，一来是我认为深色模式就不应该存在（又丑又刺眼，包括晚上；还不利于视力卫生）；二来是我已经测试<a
+				href="https://darkreader.org/">Dark Reader</a
+			>，它完全兼容此网站，若实在需要深色模式，可以安装。
+		</p>
+		<p>本站特色：</p>
+		<ul>
+			<li>目前不含JavaScript；</li>
+			<li>颜色和对比度均符合WCAG标准。</li>
+		</ul>
+		<p>
+			可以将任何对本站的建议、日志的评论发到我的电邮或社媒私信，欢迎交流。
+		</p>
+		<h2 class="copyright">版权声明</h2>
+		<p>
+			本站发布的所有原创内容皆保留版权，转载时需要标注来源并附带原文链接。
+		</p>
+		<p>
+			<strong style="font-family: sans-serif;"
+				>未经许可，请勿存档本站。</strong
+			>此处的存档指公共网页快照（如<a href="https://web.archive.org/"
+				>Wayback Machine</a
+			>等服务），仅保存自用而不公开发布的，不在此限。
+		</p>
 	</div>
 </BaseLayout>
