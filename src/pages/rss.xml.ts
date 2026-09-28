@@ -5,13 +5,13 @@ import sanitizeHtml from 'sanitize-html';
 import { SITE_DESCRIPTION, SITE_LANG, SITE_TITLE } from '../consts';
 import { getPostLang, getPublishedPosts } from '../lib/posts';
 
-const parser = new MarkdownIt();
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context: APIContext) {
 	const posts = await getPublishedPosts();
 
 	return rss({
-		title: `${SITE_TITLE}_网络日志`,
+		title: `温图丝·乌塔的网络日志`,
 		description: SITE_DESCRIPTION,
 		site: context.site!,
 		items: posts.map((post) => ({
