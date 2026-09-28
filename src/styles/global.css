@@ -350,6 +350,10 @@ h1 {
 	font-family: var(--font-charter), sans-serif;
 }
 
+.prose blockquote:lang(en) {
+	text-align: left;
+}
+
 .prose hr {
   height: 0.15em;
   width: 15%;

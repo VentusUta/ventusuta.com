@@ -20,7 +20,9 @@ IPA系列字体是由日本“[文字信息技术促进理事会](https://moji.o
 
 但IPA许可证有一个相较其他许可证来讲较为特殊的条款：
 
-><span lang="en">It is required to also Redistribute means to enable recipients of the Derived Program to replace the Derived Program with the Licensed Program first released under this License (the “Original Program”). Such means may be to provide a difference file from the Original Program, or instructions setting out a method to replace the Derived Program with the Original Program.</span>
+<blockquote lang="en">
+It is required to also Redistribute means to enable recipients of the Derived Program to replace the Derived Program with the Licensed Program first released under this License (the “Original Program”). Such means may be to provide a difference file from the Original Program, or instructions setting out a method to replace the Derived Program with the Original Program.
+</blockquote>
 
 也就是在软件（以及网页）中使用时，应允许用户恢复到原IPA字体。对于在一般软件和网页字体使用的情况，若要合规，**必须**提供一个切换回原字体的方式（比如弄个选项）或者提供一个差异文件。
 
