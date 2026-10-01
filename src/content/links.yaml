@@ -2,7 +2,7 @@
   name: Winslow
   url: https://winsloweric.com/
   icon: https://avatars.githubusercontent.com/u/36105035?v=4
-  description: 一个妄想着些什么的观察者。
+  description: 神圣的网络将你我连接在一起
 
 - id: overflowcat
   name: 新世界的大门
@@ -40,3 +40,11 @@
   url: https://vzstless.moe/
   icon: https://avatars.githubusercontent.com/u/233668878?v=4
   description: As once, as always.
+  rss: https://vzstless.moe/posts/atom.xml
+
+- id: ruri
+  name: Ruri Akai
+  url: https://rurichan.work/
+  icon: https://blog.rurichan.work/files/avatar.jpg
+  description: 且听风吟
+  rss: https://blog.rurichan.work/atom.xml
