@@ -1,19 +1,19 @@
 import rss from '@astrojs/rss';
+import type { APIContext } from 'astro';
 import MarkdownIt from 'markdown-it';
-import footnote from 'markdown-it-footnote';
 import sanitizeHtml from 'sanitize-html';
 import { SITE_DESCRIPTION, SITE_LANG} from '../consts';
 import { getPostLang, getPublishedPosts } from '../lib/posts';
 
-const parser = new MarkdownIt({ html: true }).use(footnote);
+const parser = new MarkdownIt({ html: true });
 
-export async function GET(context) {
+export async function GET(context: APIContext) {
 	const posts = await getPublishedPosts();
 
 	return rss({
 		title: `温图丝·乌塔的网络日志`,
 		description: SITE_DESCRIPTION,
-		site: context.site,
+		site: context.site!,
 		items: posts.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.pubDate,

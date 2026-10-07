@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -360,15 +362,6 @@ h1 {
 	border: 0;
 	height: 2px;
 	background-color: #ccc;
-}
-
-[data-footnotes] {
-	border-top: 1px solid;
-}
-
-[data-footnotes] #footnote-label{
-	display: none;
-	visibility: hidden;
 }
 
 rt {

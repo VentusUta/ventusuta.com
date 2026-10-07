@@ -20,9 +20,6 @@ importers:
       markdown-it:
         specifier: ^15.0.1
         version: 15.0.1
-      markdown-it-footnote:
-        specifier: ^4.0.0
-        version: 4.0.0
       sanitize-html:
         specifier: ^2.17.7
         version: 2.17.7
@@ -1111,9 +1108,6 @@ packages:
 
   magicast@0.5.4:
     resolution: {integrity: sha512-llBEhWm1SacoRwgHUoQJYtwp4PBLF4faQi5TCpIGyGs9n4y5+juI0tDgyKIfpqxckRHaHzouUEph3THklWh03w==}
-
-  markdown-it-footnote@4.0.0:
-    resolution: {integrity: sha512-WYJ7urf+khJYl3DqofQpYfEYkZKbmXmwxQV8c8mO/hGIhgZ1wOe7R4HLFNwqx7TjILbnC98fuyeSsin19JdFcQ==}
 
   markdown-it@15.0.1:
     resolution: {integrity: sha512-9/7gE95FNPkfUWrjJIoHZza2iLmuJlPD0UNMxPi7bxUrbCR525YZY0r+zyfes0dZI5ZZ/uNIXUJca0pJvtw41g==}
@@ -2507,8 +2501,6 @@ snapshots:
       '@babel/parser': 7.29.8
       '@babel/types': 7.29.8
       source-map-js: 1.2.1
-
-  markdown-it-footnote@4.0.0: {}
 
   markdown-it@15.0.1:
     dependencies:
