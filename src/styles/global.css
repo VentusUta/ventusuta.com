@@ -351,6 +351,7 @@ h1 {
 
 .prose:lang(zh-CN) strong,
 .prose:lang(zh-CN) b {
+	font-weight: 550;
 	font-family: var(--font-charter), sans-serif;
 }
 
