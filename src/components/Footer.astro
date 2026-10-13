@@ -4,6 +4,18 @@ import { SITE_TITLE } from "../consts";
 const year = new Date().getFullYear();
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
 const onBlog = pathname === "/blog" || pathname.startsWith("/blog/");
+
+const items = [
+	{ href: "/blog/jump2blogsearch", label: "日志搜索" },
+	{ href: "/blog/tags/", label: "全部标签" },
+	{ href: "/rss.xml", label: "RSS" },
+];
+
+function isCurrent(href: string) {
+	const path = href.replace(/\/$/, "") || "/";
+	if (path === "/") return pathname === "/";
+	return pathname === path || pathname.startsWith(`${path}/`);
+}
 ---
 
 <footer class="site-footer">
@@ -12,9 +24,15 @@ const onBlog = pathname === "/blog" || pathname.startsWith("/blog/");
 		{
 			onBlog && (
 				<div class="footer-links">
-					<a href="/blog/jump2blogsearch">日志搜索</a>
-					<a href="/blog/tags/">全部标签</a>
-					<a href="/rss.xml">RSS</a>
+					{items.map((item) => (
+						<a
+							href={item.href}
+							data-text={item.label}
+							aria-current={isCurrent(item.href) ? "page" : undefined}
+						>
+							{item.label}
+						</a>
+					))}
 				</div>
 			)
 		}
