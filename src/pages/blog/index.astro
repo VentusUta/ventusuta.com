@@ -8,6 +8,9 @@ const posts = await getPublishedPosts();
 
 <BaseLayout title="网络日志" description="Ventus Uta的网络日志">
 	<h1>网络日志</h1>
-	<blockquote><p>想象力足以改变一切。</p><p>——《来自新世界》</p></blockquote>
+	<blockquote>
+		<p>想象力足以改变一切。</p>
+		<p style="text-align: right;">——《来自新世界》</p>
+	</blockquote>
 	<PostList posts={posts} />
 </BaseLayout>

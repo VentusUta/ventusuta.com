@@ -4,7 +4,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-autospace: normal;
-	text-spacing-trim: normal;
+	text-spacing-trim: trim-start;
 }
 
 body {
@@ -135,10 +135,19 @@ pre code {
 }
 
 blockquote {
-	margin: 0;
-	padding: 0 0 0 1em;
-	border-left: 3px solid gray;
-	color: #767676;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #bbb;
+}
+
+blockquote > p:first-child,
+blockquote > blockquote:first-child {
+    margin-top: 0;
+}
+
+blockquote > p:last-child,
+blockquote > blockquote:last-child {
+    margin-bottom: 0;
 }
 
 .year {
