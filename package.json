@@ -16,6 +16,7 @@
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.3.8",
     "markdown-it": "^15.0.2",
+    "markdown-it-footnote": "^4.0.0",
     "sanitize-html": "^2.18.0"
   },
   "allowScripts": {
