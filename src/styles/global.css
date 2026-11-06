@@ -76,12 +76,12 @@ nav a[aria-current="page"] {
 
 a,
 a:visited {
-	color: teal;
+	color: #006462;
 	text-decoration: none;
 }
 
 a:hover {
-	color: teal;
+	color: #006462;
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	text-underline-position: under;
@@ -137,7 +137,7 @@ pre code {
 blockquote {
   padding: 1em;
   margin: 1em 0;
-  border: 1px solid #bbb;
+  border: 1px solid #aaa;
 }
 
 blockquote > p:first-child,
@@ -278,7 +278,7 @@ span.friend-icon {
 .post-list .excerpt {
 	margin: 0.15em 0 0;
 	font-size: 0.85em;
-	color: #767676;
+	color: #595959;
 }
 
 .tags {
@@ -292,7 +292,7 @@ span.friend-icon {
 .post-list .post-tags {
 	margin-top: 0.2em;
 	font-size: 0.85em;
-	color: #767676;
+	color: #595959;
 }
 
 h1 {
@@ -302,7 +302,7 @@ h1 {
 .post-header .meta {
 	margin: 0.25em 0 0;
 	font-size: 0.85em;
-	color: #767676;
+	color: #595959;
 }
 
 .post-header .meta p {
@@ -345,7 +345,7 @@ h1 {
 }
 
 .post-tags a {
-	color: #767676;
+	color: #595959;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: 1px;
