@@ -29,9 +29,10 @@ I think it was because people in the past had a low standard of living and could
 
 However, since ancient China, there has been the idea that ‘children do not have to be responsible for their parents.’
 
-> What is the true nature of the bond between father and son? Tracing it to its origin, it is nothing more than the fulfillment of desire. And what of the relationship between a child and their mother? It is like an object entrusted to a bottle; once it is removed, the connection is severed.
->
-> —_The Book of Later Han_ (《后汉书》)
+<blockquote>
+<p>What is the true nature of the bond between father and son? Tracing it to its origin, it is nothing more than the fulfillment of desire. And what of the relationship between a child and their mother? It is like an object entrusted to a bottle; once it is removed, the connection is severed.</p>
+<p style="text-align: right;">—<i>The Book of Later Han</i> (《后汉书》)<p>
+</blockquote>
 
 Therefore, everyone is only responsible for their own life, and there is no reason for an individual to be bound by such things.
 
