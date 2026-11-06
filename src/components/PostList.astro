@@ -18,7 +18,7 @@ const years = groupPostsByYear(posts);
 				<p class="year">{year}</p>
 				<ul class="post-list">
 					{yearPosts.map((post) => (
-						<li>
+						<li class="post-entry">
 							<time datetime={post.data.pubDate.toISOString()}>
 								{formatMonthDay(post.data.pubDate)}
 							</time>
@@ -29,13 +29,11 @@ const years = groupPostsByYear(posts);
 											{post.data.title}
 										</a>
 									</h2>
-									{
-										post.data.description && (
-											<p class="excerpt">
-												{post.data.description}
-											</p>
-										)
-									}
+									{post.data.description && (
+										<p class="excerpt">
+											{post.data.description}
+										</p>
+									)}
 								</div>
 								{post.data.tags.length > 0 && (
 									<div class="post-tags">

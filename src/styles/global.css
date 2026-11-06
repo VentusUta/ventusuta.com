@@ -252,6 +252,10 @@ span.friend-icon {
 	align-items: baseline;
 }
 
+.post-entry {
+	margin-bottom: 1em;
+}
+
 .post-list time {
 	white-space: nowrap;
 }
