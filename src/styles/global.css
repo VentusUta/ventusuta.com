@@ -50,16 +50,14 @@ nav {
 	gap: 1em;
 }
 
-nav a,
-.footer-links a {
+nav a {
 	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
 	white-space: nowrap;
 }
 
-nav a::after,
-.footer-links a::after {
+nav a::after {
 	content: attr(data-text);
 	content: attr(data-text) / "";
 	height: 0;
@@ -72,8 +70,7 @@ nav a::after,
 	user-select: none;
 }
 
-nav a[aria-current="page"],
-.footer-links a[aria-current="page"] {
+nav a[aria-current="page"] {
 	font-weight: bold;
 }
 
