@@ -44,10 +44,10 @@
 
 - id: ruri
   name: Ruri Akai
-  url: https://rurichan.work/
-  icon: https://blog.rurichan.work/files/avatar.jpg
+  url: https://ruri.cat/
+  icon: https://ruri.cat/static/avatar.png
   description: 且听风吟
-  rss: https://blog.rurichan.work/atom.xml
+  rss: https://blog.ruri.cat/atom.xml
 
 - id: luoaowoo
   name: luoaowoo
