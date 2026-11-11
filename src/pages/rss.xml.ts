@@ -1,12 +1,11 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
 import MarkdownIt from 'markdown-it';
-import footnote from 'markdown-it-footnote';
 import sanitizeHtml from 'sanitize-html';
-import { SITE_DESCRIPTION, SITE_LANG } from '../consts';
+import { SITE_DESCRIPTION, SITE_LANG} from '../consts';
 import { getPostLang, getPublishedPosts } from '../lib/posts';
 
-const parser = new MarkdownIt({ html: true }).use(footnote);
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context: APIContext) {
 	const posts = await getPublishedPosts();
