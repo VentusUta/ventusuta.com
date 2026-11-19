@@ -11,7 +11,7 @@ export default defineConfig({
 			provider: fontProviders.local(),
 			name: 'Charter',
 			cssVariable: '--font-charter',
-			fallbacks: ['Charter'],
+			fallbacks: ['Charter', 'Charis'],
 			optimizedFallbacks: false,
 			options: {
 				variants: [
