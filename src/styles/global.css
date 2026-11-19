@@ -371,12 +371,6 @@ h1 {
 	text-align: left;
 }
 
-.prose hr {
-	border: 0;
-	height: 2px;
-	background-color: #ccc;
-}
-
 rt {
 	font-size: 70%;
 	position: relative;
